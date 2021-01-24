@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flexbox;  
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1em;  
+}
+
+main {  
+  display: flexbox;  
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%; 
+  background-color: #8BC7E6; 
+  border-radius: 1em 1em 0 0;
+}
+
+header {    
+  background-color: #6B9BB3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; 
+  margin: 0 auto; 
+  padding: 1em; 
+  border-radius: 1em 1em 0 0;  
+}
+
+header > img {  
+  background: url("../img/coelho.jpg") no-repeat round;
+  width: 7em;
+  height: 7em;
+  margin-right: 2em;
+  border-radius: 1em 1em 0 0;   
+}
+
+header > nav {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 5em;  
+}
+header > nav > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 50%;  
+  
+  
+}
+
+header > nav > div > input {
+  width: 75%;
+  height: 75%;   
+}
+
+header > nav > div > button { 
+    height: 75%;   
+  
+}
+
+header > nav > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  width: 5%;
+  height: 25%;   
+}
+header > nav > ul > li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;    
+  
+  background-color: #91D2F2;
+}
+section {
+  padding: 1em;
+}
+
+#primeiraSec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  font-size: 1.5em; 
+  padding-bottom: 0; 
+}
+
+#primeiraSec > p{
+  margin: 1%;
+  padding: 1%;
+  background-color: #D2E2EA;
+}
+
+#segundaSec{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;   
+}
+
+#segundaSec > img {    
+  width: 50%;
+  height: 100%;
+  margin: 2em;
+}
+
+#terceiraSec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  font-size: 1.5em; 
+  background-color: #3D5866; 
+}
+
+#terceiraSec > p{
+  margin: 1%;
+  padding: 1%;
+  background-color: #6390A6;
+}
+
+#quartaSec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;   
+}
+
+#quartaSec > img {    
+  width: 9em;
+  height: 7em;
+  margin: 2em;
+}
+
+/* rodapé */
+footer {
+  background-color: #3D5866;
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 5em;
+  border-radius: 0 0 1em 1em;  
+}
+
+/* inicio layout para dispositivos móveis */
+
+@media screen and (max-width: 1440px) {
+  #nome {
+    width: 53%;
+  }
+}
